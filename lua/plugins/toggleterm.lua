@@ -5,7 +5,7 @@ return {
     config = function()
       require("toggleterm").setup({})
 
-      vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<CR>", {})
+      vim.keymap.set("n", "<leader><cr>", ":ToggleTerm direction=float<CR>", {})
     end,
   },
 }
