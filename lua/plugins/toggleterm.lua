@@ -42,12 +42,20 @@ return {
         end
 			end
 
+			local function copy_file_command()
+        local filepath = vim.fn.expand("%")
+        vim.fn.setreg("+", filepath)
+        print("Copied to clipboard: " .. filepath)
+			end
+
 			vim.cmd("autocmd! TermOpen term://*toggleterm* lua set_terminal_keymaps()")
 
 			vim.keymap.set("n", "<C-\\>", ":ToggleTerm direction=float<CR>", {})
 			vim.keymap.set("n", "<leader>tt", run_rspec_current_file, {})
 			vim.keymap.set("n", "<leader>tT", run_rspec_all, {})
 			vim.keymap.set("n", "<leader>ty", copy_rspec_command, {})
+
+			vim.keymap.set("n", "<leader>yy", copy_file_command, {})
 		end,
 	},
 }
