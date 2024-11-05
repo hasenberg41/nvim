@@ -5,5 +5,10 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.g.mapleader = " "
 
+vim.api.nvim_create_autocmd({"VimLeave", "VimSuspend"}, {
+  pattern = "*",
+  command = "set guicursor=a:ver25-blinkon1"
+})
+
 -- Setup system clipboard
 vim.opt.clipboard = "unnamedplus"
