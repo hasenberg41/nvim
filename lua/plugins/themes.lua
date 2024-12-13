@@ -1,5 +1,6 @@
 return {
 	{ "projekt0n/github-nvim-theme", name = "github_dark", priority = 1000 },
+  { 'dikiaap/minimalist', priority = 1000 },
 	-- { "morhetz/gruvbox" },
 	{
 		"f4z3r/gruvbox-material.nvim",
@@ -11,17 +12,17 @@ return {
 					italics = true, -- enable italic comments
 				},
 				background = {
-					transparent = false, -- set the background to transparent
+					transparent = true, -- set the background to transparent
 				},
 				float = {
 					force_background = false, -- force background on floats even when background.transparent is set
-					background_color = nil, -- set color for float backgrounds. If nil, uses the default color set
+          --background_color = "#1d2021", -- set color for float backgrounds. If nil, uses the default color set
 					-- by the color scheme
 				},
 				signs = {
 					highlight = true, -- whether to highlight signs
 				},
-				customize = nil, -- customize the theme in any way you desire, see below what thi
+				customize = nil,
 			})
 
 			vim.cmd.colorscheme("gruvbox-material")
