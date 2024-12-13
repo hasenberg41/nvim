@@ -35,6 +35,10 @@ return {
         capabilities = capabilities,
       })
 
+      lspconfig.gopls.setup({
+        capabilities = capabilities,
+      })
+
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 
       -- Jump to the definition
@@ -53,22 +57,22 @@ return {
       vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
 
       -- Displays a function's signature information
-      vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, {})
+      -- vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, {})
 
       -- Renames all references to the symbol under the cursor
-      vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, {})
+      -- vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, {})
 
       -- Selects a code action available at the current cursor position
       vim.keymap.set("n", "<F4>", vim.lsp.buf.code_action, {})
 
       -- Show diagnostics in a floating window
-      vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
+      -- vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
 
       -- Move to the previous diagnostic
-      vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
+      -- vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
 
       -- Move to the next diagnostic
-      vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
+      -- vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
     end,
   },
 }
