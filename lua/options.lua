@@ -18,5 +18,5 @@ vim.api.nvim_create_autocmd({"VimLeave", "VimSuspend"}, {
 })
 
 -- Setup system clipboard
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
 vim.opt.swapfile = false
