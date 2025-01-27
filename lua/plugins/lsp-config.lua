@@ -66,13 +66,13 @@ return {
       vim.keymap.set("n", "<F4>", vim.lsp.buf.code_action, {})
 
       -- Show diagnostics in a floating window
-      -- vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
+      vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
 
       -- Move to the previous diagnostic
-      -- vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
+      vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
 
       -- Move to the next diagnostic
-      -- vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
+      vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
     end,
   },
 }
