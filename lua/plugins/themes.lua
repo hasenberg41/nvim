@@ -16,11 +16,11 @@ return {
 				},
 				float = {
 					force_background = false, -- force background on floats even when background.transparent is set
-          --background_color = "#1d2021", -- set color for float backgrounds. If nil, uses the default color set
+          background_color = nil, -- background color for floating windows
 					-- by the color scheme
 				},
 				signs = {
-					highlight = true, -- whether to highlight signs
+					highlight = false, -- whether to highlight signs
 				},
 				customize = nil,
 			})
