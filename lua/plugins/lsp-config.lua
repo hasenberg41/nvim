@@ -39,6 +39,10 @@ return {
         capabilities = capabilities,
       })
 
+      lspconfig.ts_ls.setup({
+        capabilities = capabilities,
+      })
+
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 
       -- Jump to the definition
